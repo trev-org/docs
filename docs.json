@@ -1,35 +1,24 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "aspen",
+  "name": "Windsurf Docs",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#E997E6",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#011C42"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Windsurf",
         "groups": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
+            "group": "Intro to Concepts",
+            "pages": ["introduction", "quickstart", "development"]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
+            "group": "Key Principles",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -38,7 +27,12 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Understanding Basic",
+            "pages": ["essentials/settings", "essentials/navigation"],
+            "expanded": true
+          },
+          {
+            "group": "Advanced Topics",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
@@ -48,13 +42,29 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Windsurf Plugins",
         "groups": [
           {
             "group": "API documentation",
+            "pages": ["api-reference/introduction"]
+          },
+          {
+            "group": "Endpoint examples",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Windsurf Reviews",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint examples",
@@ -68,20 +78,7 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "global": {}
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -90,27 +87,35 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Feature Request",
+        "href": "https://windsurf.canny.io/feature-requests/"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Sign In",
+      "href": "https://windsurf.com/account/login"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "fonts": {
+    "heading": {
+      "family": "JetBrains Mono"
+    },
+    "body": {
+      "family": "DM Sans"
+    }
   },
   "footer": {
     "socials": {

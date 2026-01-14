@@ -1,0 +1,416 @@
+/* dark mode background */
+html.dark,
+html.dark body {
+  background: linear-gradient(180deg, #021c42 0%, #00132e 100%);
+}
+
+/* for the "feature request" link in header */
+.navbar-link {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* remove background color of "feature request" link */
+.navbar-link a {
+  background: none !important;
+}
+
+/* for "sign in" button in header */
+#topbar-cta-button {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  background-color: rgb(var(--primary-light));
+  color: #011c42;
+}
+
+/* bg for dark mode */
+.dark #topbar-cta-button {
+  background-color: rgb(var(--primary));
+}
+
+/* for svg icon in "sign in" button in header */
+#topbar-cta-button svg {
+  filter: brightness(0) saturate(100%) invert(6%) sepia(43%) saturate(5865%)
+    hue-rotate(209deg) brightness(99%) contrast(99%);
+}
+
+/* for color of "sign in" button in header */
+#topbar-cta-button span {
+  color: #011c42;
+  background-color: transparent;
+}
+
+/* light mode navi tab text color */
+.nav-tabs .nav-tabs-item.text-primary {
+  color: #011c42;
+}
+
+/* dark mode navi tab text color */
+.dark .nav-tabs .nav-tabs-item.text-primary {
+  color: #fff;
+}
+
+/* light mode inactive navi tab text color */
+.nav-tabs .nav-tabs-item.text-gray-800 {
+  color: #78787a;
+}
+
+/* light mode active navi tab bottom underline color */
+.nav-tabs .nav-tabs-item.text-primary div {
+  background-color: rgb(var(--primary-light));
+}
+
+/* dark mode active navi tab bottom underline color */
+.dark .nav-tabs .nav-tabs-item.text-primary div {
+  background-color: rgb(var(--primary));
+}
+
+/* for border color hover effect in dark mode */
+.dark .card:hover {
+  border-color: rgb(var(--primary));
+}
+
+/* border color hover effect in light mode */
+.card:hover {
+  border-color: rgb(var(--primary-light));
+}
+
+/* custom hero content */
+.hero {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/hero-image-light.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* dark mode hero image */
+.dark .hero {
+  background-image: url("/images/hero-image-dark.svg");
+}
+
+/* search bar in top navbar */
+#search-bar-entry {
+  background-color: #fff;
+  border-radius: 50px;
+  border: none !important;
+}
+
+/* dark mode search bar */
+.dark #search-bar-entry {
+  background-color: #011c41;
+}
+
+/* general body styling to make hero background image look better */
+#body-content {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-width: 100% !important;
+}
+
+/* sidebar adjustments */
+#sidebar-content {
+  padding-left: 1.25rem;
+  border-right: 1px solid #f9f3e9;
+}
+
+/* dark mode sidebar */
+.dark #sidebar-content {
+  border-right: 1px solid #264572;
+}
+
+/* used to keep links more consistent with padding */
+#sidebar-content li {
+  padding: 0;
+  margin: 0;
+}
+
+/* mintlify sidebar active tab */
+#sidebar-content li a.bg-primary\/10 {
+  background-color: rgb(var(--primary-light));
+  color: #011c42;
+  border-radius: 0px;
+  padding: 5px 13px;
+  margin: 0;
+}
+
+.dark #sidebar-content li a.bg-primary\/10 {
+  background-color: rgb(var(--primary));
+}
+
+/* dark mode specific navbar colors for svg icons -- deprecated now */
+/* #sidebar-content li a.bg-primary\/10 svg {
+  filter: brightness(0) saturate(100%) invert(6%) sepia(43%) saturate(5865%)
+    hue-rotate(209deg) brightness(99%) contrast(99%);
+} */
+
+/* sidebar inactive tab */
+#sidebar-content li a:not(.bg-primary\/10) {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 5px 13px;
+  margin: 0;
+  color: #0b0c0e;
+}
+
+/* dark mode sidebar inactive tab */
+.dark #sidebar-content li a:not(.bg-primary\/10) {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* navbar color light mode */
+#navbar .bg-background-light {
+  background-color: #f9f3e9 !important;
+}
+
+/* navbar color dark mode */
+.dark #navbar .dark\:bg-background-dark {
+  background-color: #01142f !important;
+}
+
+/* dark mode navbar border bottom */
+.dark #navbar .border-b {
+  border-bottom-color: #264572;
+}
+
+/* light mode navbar border bottom */
+#navbar .border-b {
+  border-bottom-color: #e9eaec;
+}
+
+/* sidebar titles */
+#sidebar-title {
+  font-family: "DM Sans";
+  font-size: 12px;
+  color: #bbbbbc;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+/* dark mode sidebar titles */
+.dark #sidebar-title {
+  color: #78787a;
+}
+
+/* grid for feature cards */
+.feature-card-container {
+  margin: 16px 5em 0 5em;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* hero title */
+.hero-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #0b0c0e;
+  margin-bottom: 16px;
+}
+
+/* dark mode hero title */
+.dark .hero-title {
+  color: #fff;
+}
+
+/* hero subtitle */
+.hero-subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #78787a;
+  margin-bottom: 16px;
+}
+
+.dark .hero-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-content {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #78787a;
+  margin-bottom: 24px;
+}
+
+.dark .hero-content {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* feature card with gradient icon background */
+.feature-card,
+.changelog-card {
+  background: radial-gradient(
+    circle at 100% 100%,
+    #fed88b 0%,
+    #fca9d2 26%,
+    #0967ec 64%
+  );
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 42px;
+  transition: all 0.2s ease;
+}
+
+.dark .feature-card,
+.dark .changelog-card {
+  border: 1px solid #00132e;
+}
+
+/* feature + changelog card hover */
+.feature-card:hover {
+  border-color: #e997e6;
+}
+
+/* changelog card at bottom of page */
+.changelog-card {
+  background: #003326;
+  padding: 30px;
+  background-image: url("/images/card-image.svg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 40vh;
+  margin: 48px 5em 0 5em;
+}
+
+/* custom gradients */
+.feature-card:nth-child(2),
+.feature-card:nth-child(5) {
+  background: radial-gradient(
+    circle at 140% -100%,
+    #fed88b 0%,
+    #fca9d2 26%,
+    #0967ec 64%,
+    #022b64 130%
+  );
+}
+.feature-card:nth-child(3) {
+  background: radial-gradient(
+    circle at 100% 0%,
+    #fed88b 0%,
+    #fca9d2 26%,
+    #0967ec 64%
+  );
+}
+.feature-card:nth-child(4) {
+  background: radial-gradient(
+    circle at 160% 180%,
+    #fed88b 0%,
+    #fca9d2 26%,
+    #0967ec 64%
+  );
+}
+.feature-card:nth-child(6) {
+  background: radial-gradient(
+    circle at 130% 160%,
+    #fed88b 0%,
+    #fca9d2 26%,
+    #0967ec 64%
+  );
+}
+.feature-card:nth-child(7) {
+  background: radial-gradient(
+    circle at 20% 220%,
+    #fed88b 28%,
+    #fca9d2 44%,
+    #0967ec 64%,
+    #022b64 120%
+  );
+}
+.feature-card:nth-child(8) {
+  background: radial-gradient(
+    circle at 85% -100%,
+    #fed88b 28%,
+    #fca9d2 44%,
+    #0967ec 64%,
+    #022b64 120%
+  );
+}
+.feature-card:nth-child(9) {
+  background: radial-gradient(
+    circle at -20% -140%,
+    #fed88b 28%,
+    #fca9d2 44%,
+    #0967ec 64%,
+    #022b64 120%
+  );
+}
+
+/* feature card icon */
+.feature-icon {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* feature card title */
+.feature-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+}
+
+/* changelog card title */
+.changelog-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  width: 60%;
+}
+
+/* changelog card title link styling */
+.changelog-title a {
+  color: #ecfba9 !important;
+  font-weight: 400;
+  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: currentColor !important;
+  text-decoration-thickness: 2px;
+  border-bottom: none;
+}
+
+/* feature card description */
+.feature-description {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: rgba(255, 255, 255, 1);
+}
