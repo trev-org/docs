@@ -206,6 +206,7 @@ html.dark body {
   color: #78787a;
 }
 
+/* remove the line that shows up in sidebar */
 #sidebar-content div.px-1 {
   padding-top: 0;
   visibility: hidden;
