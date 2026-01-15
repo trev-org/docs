@@ -206,6 +206,11 @@ html.dark body {
   color: #78787a;
 }
 
+#sidebar-content div.px-1 {
+  padding-top: 0;
+  visibility: hidden;
+}
+
 /* grid for feature cards */
 .feature-card-container {
   margin: 16px 5em 0 5em;
